@@ -22,9 +22,5 @@ This project implements a client-server application for generating mazes, compre
 
 ## Future Work/Improvements (optional)
 
-- Implement more sophisticated maze generation algorithms.
-- Explore different compression techniques for mazes to improve compression rates.
-- Enhance the search problem solver with additional algorithms or optimizations.
 - Develop a graphical user interface (GUI) for better interaction and visualization of mazes and solutions.
-- Improve error handling and logging for server and client operations.
 - Add more comprehensive unit and integration tests.
