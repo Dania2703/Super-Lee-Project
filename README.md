@@ -55,14 +55,7 @@ This project provides a comprehensive system for managing suppliers, contracts, 
     ```
     - Follow the on-screen menu prompts to interact with the system.
 
-## Future Work/Improvements
 
-- Implement a robust database schema and connection for persistent data storage.
-- Develop a graphical user interface (GUI) for a more user-friendly experience.
-- Add authentication and authorization mechanisms for secure access.
-- Enhance reporting capabilities with more detailed analytics and visualization.
-- Improve error handling and input validation for all user interactions.
-- Implement unit and integration tests for all functionalities.
-- Optimize database queries for better performance.
-- Consider using a dependency management tool (e.g., Maven or Gradle) for easier project setup and dependency handling.
+  ## Contact
+ -feel free for any question
 
