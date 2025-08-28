@@ -1,0 +1,1 @@
+command line :  java -jar adss_v0.jar
