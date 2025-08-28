@@ -1,26 +1,28 @@
-# Maze Compression and Search Problem Solver
+# Two-Player Game AI – Minimax, Alpha-Beta Pruning & Heuristics
 
-This project implements a client-server application for generating mazes, compressing and decompressing them, and solving search problems within mazes. It includes functionalities for testing these operations.
+This project implements classic **game tree search algorithms** (Minimax and Alpha-Beta pruning) along with **heuristic evaluation functions** for two-player, turn-based games such as Connect Four or similar board games.
 
-## Tech Stack
+## Overview
+- **Minimax:** Explores the full game tree to find the optimal move assuming both players play perfectly.
+- **Alpha-Beta Pruning:** An optimized version of Minimax that cuts off branches that cannot affect the final decision, making the search faster.
+- **Heuristics:** When the game tree is too large to search fully, heuristics provide an approximate evaluation of non-terminal board states:
+  - *Base heuristic* – counts sequences of length 3 or 4 that can lead to a win.
+  - *Advanced heuristic* – combines sequence analysis, center control, and detection of potential threats.
 
-- Java
-- Custom compression/decompression streams (`MyCompressorOutputStream`, `MyDecompressorInputStream`)
-- Custom maze generation algorithms (`MyMazeGenerator`)
-- Custom search algorithms (`AState`, `Solution`)
+## Applications
+- Connect Four AI agents  
+- General two-player turn-based board games  
+- Teaching and experimenting with adversarial search  
 
-## Features
+## Requirements
+- Python 3.8+  
+- NumPy  
 
-- **Maze Generation**: Generates mazes of specified dimensions.
-- **Maze Compression/Decompression**: Compresses generated mazes and decompresses them back to their original form, with a focus on compression efficiency.
-- **Client-Server Communication**: Establishes communication between clients and servers for:
-    - Requesting maze generation from a server.
-    - Sending mazes to a server for solving search problems and receiving solutions.
-- **Automated Testing**: Includes test cases for:
-    - Verifying the integrity of compressed and decompressed mazes.
-    - Communicating with maze generation and search problem-solving servers.
-
-## Future Work/Improvements (optional)
-
-- Develop a graphical user interface (GUI) for better interaction and visualization of mazes and solutions.
-- Add more comprehensive unit and integration tests.
+## Final Result
+- Running **Alpha-Beta or Minimax** returns a numeric value (evaluation of the position) and the best move chosen for the current player.  
+- Running **heuristics** returns an integer score showing how favorable the board is for one player over the other:  
+  - Positive score = better for Player 1  
+  - Negative score = better for Player 2  
+  - Larger values = stronger advantage  
+## License
+-This project is open-source and available under the MIT License.
